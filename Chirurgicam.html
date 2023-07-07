@@ -1,0 +1,403 @@
+﻿   <!DOCTYPE html>
+        <html>
+
+        <head>
+        <title>MENU'</title>
+
+        
+        <meta charset="UTF-8">
+
+
+        
+            <meta http-equiv="Content-Language" value="en-UK" />
+       
+             <meta name="viewport" content="width=device-width, initial-
+         scale=1">
+        
+            <!--=================================CSS LINKS==========================================-->
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+              <!-- Custom fonts for this template-->
+              <!-- Custom styles for this template-->
+
+       
+
+       
+            <style type="text/css">
+
+            </style>
+        
+</head>
+<body style="mediumseagreen">
+<body bgcolor="mediumseagreen">
+
+
+        <!-- Hidden Side Navigation -->
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-
+        center " style="display:none" id="mySidebar">
+          <h1 class="w3-xxxlarge w3-text-theme">STRUMENTARIO</h1>
+
+  <a href="#" class="w3-bar-item w3-button">CATARATTA</a>
+  <a href="#" class="w3-bar-item w3-button">CERCHIAGGIO</a>
+  <a href="#" class="w3-bar-item w3-button">VITRECTOMIA</a>
+  <a href="#" class="w3-bar-item w3-button">STRABISMO</a>
+  <a href="#" class="w3-bar-item w3-button">PRESERFLO'</a>
+  <a href="#" class="w3-bar-item w3-button">CARLEVALE</a>
+  <a href="#" class="w3-bar-item w3-button">ENUCLEAZIONE</a>
+  <a href="#" class="w3-bar-item w3-button">PLACCA RUTENIO</a>
+  <a href="#" class="w3-bar-item w3-button">PK</a>
+  <a href="#" class="w3-bar-item w3-button">DSAEK</a>
+  <a href="#" class="w3-bar-item w3-button">DMER</a>
+  <a href="#" class="w3-bar-item w3-button">ECCE</a>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i> &#9776;</button>
+</nav>
+<!-- ====================================================
+                   | MAIN NAV BAR |
+========================================================
+ -->
+
+<div class="w3-bar w3-left w3-dark-gray" style="width:100%;overflow:hidden;height:44px">
+
+      <button class="w3-bar-item w3-button w3-left"  onclick="w3_open()"  title="Sidebar"><i class="fas fa-bars fa-2x"></i></button>
+      <span id="nav-right-btn-margin" class="w3-bar-item w3-right" style="margin-right: 30px"> </span>
+      <a class="w3-bar-item w3-button w3-right w3-hide-small" href="{% url 'signup' %}" title="Sign Up" style="padding-top: 14px">SIGN UP</a>
+      <a class="w3-bar-item w3-button w3-right w3-hide-small" href="{% url 'login' %}" title="Login" style="padding-top: 14px">LOGIN</a>
+      <a class="w3-bar-item w3-button w3-right" href="#" title="#"></a>
+      <a class="w3-bar-item w3-button w3-right" href="#" title="#"></a>
+
+     </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-gray w3-padding-16">
+  <h3>SALA OPERATORIA </h3>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up" style="color: #008000"></i></span></a>
+  </div>
+  <br>
+  <br>
+</footer>
+
+<script>
+// Script for Sidebar etc
+
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block"
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database Medici</title>
+  <style>
+    #materiali {
+      text-align: center;
+     
+    }
+  </style>
+</head>
+<body>
+    <form align="center">
+  <h1>DATA BASE STRUMENTARIO CHIRURGICO SALA OPERATORIA DI OCULISTICA</h1>
+    </form>
+    <form align="center">
+    <img src="/Users/stefanopepe/Desktop/Scrivania - MacBook Air di STE/FloRetina/cerchiaggio/start2.JPG" width="824" height="482">
+    </form>
+    
+  <label for="chirurgo">Nome Chirurgo:</label>
+  <select id="chirurgo">
+      
+    <option value="Rizzo">Rizzo</option>
+    <option value="Baldascino">Baldascino</option>
+    <option value="Capobianco">Capobianco</option>
+    <option value="De Vico">De Vico</option>
+    <option value="D Amico">D Amico</option>
+    <option value="Fasciani">Fasciani</option>
+    <option value="Gambini">Gambini</option>
+    <option value="Lepore">Lepore</option>
+    <option value="Molle">Molle</option>
+    <option value="Mosca">Mosca</option>
+    <option value="Ricci">Ricci</option>
+    <option value="Savastano">Savastano</option>
+    <option value="Salerni">Salerni</option>
+    <option value="Savino">Savino</option>  
+    <option value="Scupola">Scupola</option>
+    
+    
+  
+  </select>
+
+  <br><br>
+    
+  <label for="intervento">Tipo Intervento:</label>
+  <select id="intervento">
+    
+    <option value="cataratta">Cataratta</option>
+    <option value="vitrectomia">Vitrectomia</option>
+    <option value="glaucoma">Glaucoma Preserflo</option>
+     <option value="carlevale">Carlevale</option>
+    <option value="Cerchiaggio">Cerchiaggio</option>
+    <option value="strabismo">Strabismo</option>
+    <option value="cataratta ecce">Cataratta Ecce</option>
+    <option value="PK">Trapianto Pk</option>
+    <option value="DMEK">Trapianto DMEK</option>
+    <option value="DSAEK">Trapianto DSAEK</option>
+  </select>
+
+  <br><br>
+
+  <button onclick="visualizzaMateriali()">Visualizza Materiali</button>
+
+  <div align="right"  id="materiali"></div><table id="risultatiTable">
+
+  <script>
+    function visualizzaMateriali() {
+      var chirurgo = document.getElementById("chirurgo").value;
+      var intervento = document.getElementById("intervento").value;
+      var materialiDiv = document.getElementById("materiali");
+
+      var materiali = "";
+
+      if (chirurgo === "Rizzo" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Rizzo" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Rizzo" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "Scupola" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>laser</li><li>perfluoro</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "Savastano" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>cannuline</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Savastano" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "De Vico" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "De Vico" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "De Vico" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "Ricci" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>cannuline</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Lepore" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Protectalon</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore centuturion</li><li>cannuline</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Gambini" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>cannuline</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "D Amico" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore centuturion</li><li>cannuline</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Capobianco" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Protectalon</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>cannuline</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Mosca" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Molle" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Protectalon</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore centuturion</li><li>cannuline</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Savino" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Cannuline</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Scupola" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Cannuline</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Fasciani" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "D Amico" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "Baldascino" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "Ricci" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "Molle" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "Gambini" && intervento === "vitrectomia") {
+        materiali = "<h2>Vitrectomia:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Trocart</li><li>Fibra Ottica</li><li>Vitrectomo</li><li>Candeliere</li><li>Indentatore</li><li>Pinza Retina</li><li>Diatermia</li><li>Gentamicina</li></ul>";
+
+
+      } else if (chirurgo === "Baldascino" && intervento === "cataratta") {
+        materiali = "<h2>Cataratta:</h2><ul><li>Blefarostato semplice</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione no ago piatto</li><li>manipolatore</li><li>Facoemulsificatore</li><li>monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>introduttore a molla</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Rizzo" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "Scupola" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "Fasciani" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "Baldascino" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "Mosca" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "Molle" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "D Amico" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+     
+      } else if (chirurgo === "Scupola" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+
+      } else if (chirurgo === "Rizzo" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "Savastano" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "de Vico" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+
+      } else if (chirurgo === "Baldascino" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+
+      } else if (chirurgo === "Scupola" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+
+      } else if (chirurgo === "D Amico" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+
+      } else if (chirurgo === "Mosca" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "Molle" && intervento === "carlevale") {
+        materiali = "<h2>Carlevale:</h2><ul><li>Blefarostato</li><li>IAL e viscoelastico</li><li>pinza coccodrillo</li><li>penna dermografica</li><li>lame 30 ° e 2,2</li><li>crescent</li><li>weskot</li><li>diatermia/li><li>pinza anatomica</li><li>compasso</li><li>Mc Pearson</li><li>uncino da lente</li><li>nylon c3</li><li>Vicryl 8.0</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "Salerni" && intervento === "strabismo") {
+        materiali = "<h2>strabismo:</h2><ul><li>Blefarostato</li><li>ago camera anteriore</li><li>diatermia</li><li>bietti</li><li>lweskot</li><li>uncini</li><li>compasso</li><li>miostato/li><li>vicryl 6.0 n°544 x 2<li>Vicryl 8.0</li><li>Gentamicina</li></ul>";
+
+      } else if (chirurgo === "Savino" && intervento === "strabismo") {
+        materiali = "<h2>strabismo:</h2><ul><li>Blefarostato</li><li>ago camera anteriore</li><li>diatermia</li><li>bietti</li><li>lweskot</li><li>uncini</li><li>compasso</li><li>miostato/li><li>vicryl 6.0 n°544 x 2<li>Vicryl 8.0</li><li>Gentamicina</li></ul>";
+
+
+      } else if (chirurgo === "Rizzo" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "De Vico" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Savastano" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Molle" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Scupola" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "D Amico" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Baldascino" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Lepore" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Ricci" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Mosca" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Fasciani" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Capobianco" && intervento === "cataratta ecce") {
+        materiali = "<h2>Cataratta Ecce:</h2><ul><li>Blefarostato</li><li>Pinza Hoskin</li><li>Lama1.2</li><li>Lama 2.2</li><li>Provisc</li><li>Pinza da Ressi</li><li>Idrodissezione</li><li>chopper</li><li>manipolatore</li><li>Facoemulsificatore</li><li>Monovia</li><li>duovisc</li><li>Lente</li><li>Idrosutura</li><li>Aprokam</li></ul>";
+
+      } else if (chirurgo === "Mosca" && intervento === "PK") {
+        materiali = "<h2>Trapianto Pk:</h2><ul><li>Blefarostato</li><li>Compasso</li><li>colibri</li><li>Lama 30°</li><li>cresent</li><li>Trapano</li><li>Punch</li><li>Siringa 5 ml aria</li><li>forbici destra e sinistra</li><li>Serrafili</li><li>Bisturi Diamantato</li><li>spatola a cucchiaio</li><li>cornea</li><li>IAL</li><li>Etilon 10.0</li><li>serrafili</li><li>spatola a manina</li><li>portaghi</li><li>Acetilcolina</li></ul>";
+
+
+      } else if (chirurgo === "Rizzo" && intervento === "PK") {
+        materiali = "<h2>Trapianto Pk:</h2><ul><li>Blefarostato</li><li>Compasso</li><li>colibri</li><li>Lama 30°</li><li>cresent</li><li>Trapano</li><li>Punch</li><li>Siringa 5 ml aria</li><li>forbici destra e sinistra</li><li>Serrafili</li><li>Bisturi Diamantato</li><li>spatola a cucchiaio</li><li>cornea</li><li>IAL</li><li>Etilon 10.0</li><li>serrafili</li><li>spatola a manina</li><li>portaghi</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "Capobianco" && intervento === "PK") {
+        materiali = "<h2>Trapianto Pk:</h2><ul><li>Blefarostato</li><li>Compasso</li><li>colibri</li><li>Lama 30°</li><li>cresent</li><li>Trapano</li><li>Punch</li><li>Siringa 5 ml aria</li><li>forbici destra e sinistra</li><li>Serrafili</li><li>Bisturi Diamantato</li><li>spatola a cucchiaio</li><li>cornea</li><li>IAL</li><li>Etilon 10.0</li><li>serrafili</li><li>spatola a manina</li><li>portaghi</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "Fasciani" && intervento === "PK") {
+        materiali = "<h2>Trapianto Pk:</h2><ul><li>Blefarostato</li><li>Compasso</li><li>colibri</li><li>Lama 30°</li><li>cresent</li><li>Trapano</li><li>Punch</li><li>Siringa 5 ml aria</li><li>forbici destra e sinistra</li><li>Serrafili</li><li>Bisturi Diamantato</li><li>spatola a cucchiaio</li><li>cornea</li><li>IAL</li><li>Etilon 10.0</li><li>serrafili</li><li>spatola a manina</li><li>portaghi</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "Mosca" && intervento === "DMEK") {
+        materiali = "<h2>Trapianto DMEK:</h2><ul><li>Blefarostato</li><li>lama 1,2 e 2,2</li><li>acetilcolina</li><li>monovia</li><li>bacinella con iniettore monouso</li><li>lenticolo corneale</li><li>Punch</li><li>Siringa 5 ml aria</li><li>uncino inverso</li><li>spatola a cucchiaio</li><li>ethilon 7770</li><li>siringa 5 ml con ago smusso</li><li>Serrafili</li><li>portaghi</li><li>Acetilcolina</li></ul>";
+
+      } else if (chirurgo === "Mosca" && intervento === "DSAEK") {
+        materiali = "<h2>Trapianto DSAEK:</h2><ul><li>Blefarostato</li><li>lama 30° E 2.75</li><li>anterior chamber</li><li>spatola a orecche di elefante</li><li>bss a caduta</li><li>2 uncini inversi</li><li>lenticolo corneale</li><li>serrafili curve</li><li>Siringa 5 ml aria</li><li>ethilon 7770</li></ul>";
+
+
+      } else if (chirurgo === "Rizzo" && intervento === "Cerchiaggio") {
+        materiali = "<h2>Cerchiaggio:</h2><ul><li>Custompack distacco, cesto Biom, episclerale, criodiatermia, sonda diatermia, endodiatermia</li><li>laccio in silicone, binario 287, sleeve, indentatore</li><li>Blefarostato</li><li>Pinza Hoskin</li><li>trocart</li><li>weskot</li><li>forbici steevens</li><li>uncini</li><li>seta 2.0 a metà</li><li>laccio</li><li>sleve</li><li>waskets</li><li>pinze congiuntivali</li><li>Mersilene 5.0</li><li>lame 30° e 15</li><li>pannarale</li><li>aria 5cc</li><li>compasso</li><li>vicrl 7.0</li><li>bentelan e genatamicina sc</li></ul>";
+
+
+      } else if (chirurgo === "De Vico" && intervento === "Cerchiaggio") {
+        materiali = "<h2>Cerchiaggio:</h2><ul><li>Custompack distacco, cesto Biom, episclerale, criodiatermia, sonda diatermia, endodiatermia</li><li>laccio in silicone, binario 287, sleeve, indentatore</li><li>Blefarostato</li><li>Pinza Hoskin</li><li>trocart</li><li>weskot</li><li>forbici steevens</li><li>uncini</li><li>seta 2.0 a metà</li><li>laccio</li><li>sleve</li><li>waskets</li><li>pinze congiuntivali</li><li>Mersilene 5.0</li><li>lame 30° e 15</li><li>pannarale</li><li>aria 5cc</li><li>compasso</li><li>vicrl 7.0</li><li>bentelan e genatamicina sc</li></ul>";
+
+      } else if (chirurgo === "Savastano" && intervento === "Cerchiaggio") {
+        materiali = "<h2>Cerchiaggio:</h2><ul><li>Custompack distacco, cesto Biom, episclerale, criodiatermia, sonda diatermia, endodiatermia</li><li>laccio in silicone, binario 287, sleeve, indentatore</li><li>Blefarostato</li><li>Pinza Hoskin</li><li>trocart</li><li>weskot</li><li>forbici steevens</li><li>uncini</li><li>seta 2.0 a metà</li><li>laccio</li><li>sleve</li><li>waskets</li><li>pinze congiuntivali</li><li>Mersilene 5.0</li><li>lame 30° e 15</li><li>pannarale</li><li>aria 5cc</li><li>compasso</li><li>vicrl 7.0</li><li>bentelan e genatamicina sc</li></ul>";
+
+      } else if (chirurgo === "Scupola" && intervento === "Cerchiaggio") {
+        materiali = "<h2>Cerchiaggio:</h2><ul><li>Custompack distacco, cesto Biom, episclerale, criodiatermia, sonda diatermia, endodiatermia</li><li>laccio in silicone, binario 287, sleeve, indentatore</li><li>Blefarostato</li><li>Pinza Hoskin</li><li>trocart</li><li>weskot</li><li>forbici steevens</li><li>uncini</li><li>seta 2.0 a metà</li><li>laccio</li><li>sleve</li><li>waskets</li><li>pinze congiuntivali</li><li>Mersilene 5.0</li><li>lame 30° e 15</li><li>pannarale</li><li>aria 5cc</li><li>compasso</li><li>vicrl 7.0</li><li>bentelan e genatamicina sc</li></ul>";
+
+      } else if (chirurgo === "Molle" && intervento === "Cerchiaggio") {
+        materiali = "<h2>Cerchiaggio:</h2><ul><li>Custompack distacco, cesto Biom, episclerale, criodiatermia, sonda diatermia, endodiatermia</li><li>laccio in silicone, binario 287, sleeve, indentatore</li><li>Blefarostato</li><li>Pinza Hoskin</li><li>trocart</li><li>weskot</li><li>forbici steevens</li><li>uncini</li><li>seta 2.0 a metà</li><li>laccio</li><li>sleve</li><li>waskets</li><li>pinze congiuntivali</li><li>Mersilene 5.0</li><li>lame 30° e 15</li><li>pannarale</li><li>aria 5cc</li><li>compasso</li><li>vicrl 7.0</li><li>bentelan e genatamicina sc</li></ul>";
+
+
+
+      } else if (chirurgo === "Savastano" && intervento === "glaucoma") {
+        materiali = "<h2>Glaucoma Preserflo:</h2><ul><li>Blefarostato</li><li>Pinza Corneale</li><li>Weskot</li><li>Crescent</li><li>Compasso Marcato</li><li>Stiletto per Evacuativa</li><li>Ago 24 G</li><li>Preserflo</li><li>Mitomicina</li><li>Nylon 10.0</li><li>Vicryl 8.0</li></ul>";
+      }
+
+  
+      materialiDiv.innerHTML = materiali;
+    }
+  </script>
+
+</body>
+</html>
+
+<a href="/Users/stefanopepe/Desktop/hoskin.jpeg">Hoskin</a>
+
